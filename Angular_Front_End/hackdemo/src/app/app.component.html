@@ -1,0 +1,35 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<div style="text-align:left">
+  <h1>
+    Input
+  </h1>
+</div>
+<div id="InputData">
+<!-- <p>Member SSN : <input #MemberSSN type ="text" value='551476390'></p>
+<p>Prov MPIN : <input #ProvMPIN type="text" value='000319510'></p>
+<p>Diag Codes : <input #DiagCodes type ="text" value='S31105'></p>
+<p>Proc/CPT Codes : <input #ProcCPTCodes type ="text" value='A6530'></p> -->
+<p>Member SSN :     <input #MemberSSN type ="text" value=''></p>
+<p>Prov MPIN :      <input #ProvMPIN type="text" value=''></p>
+<p>Diag Codes :     <input #DiagCodes type ="text" value=''></p>
+<p>Proc/CPT Codes : <input #ProcCPTCodes type ="text" value=''></p>
+<p><button (click)="onShow(ProvMPIN.value,MemberSSN.value,DiagCodes.value,ProcCPTCodes.value)">Show</button></p>
+</div>
+<div *ngIf="show" id="OutputData">
+<div  style="text-align:left">
+  <h1>
+    Output
+  </h1>
+</div>
+<div>
+<!-- <h4>Pre-Determination is needed or Not Needed If needed, pass remark codes</h4> -->
+<!-- <h4>{{ProvMPIN.value}} {{MemberSSN.value}} {{DiagCodes.value}} {{ProcCPTCodes.value}}</h4> -->
+<h4>{{output}}</h4>
+</div>
+</div>
+<router-outlet></router-outlet>
